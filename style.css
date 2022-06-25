@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.background {
+    background-image: url(../img/mountain2.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 12vh;
+}
+
+.navbar ul {
+    width: 100%;
+    text-align-last: justify;
+    margin: 0vw 12vw;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    /* margin: 0px 80px; */
+    color: darkslategray;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 4vw;
+    border-radius: 40px;
+}
+
+.menu-icon {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 20px;
+    display: none;
+}
+
+.line {
+    background-color: black;
+    width: 33px;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.first-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    height: 7vh;
+    color: rgb(3, 62, 42);
+    /* background: none; */
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1vh 1vw;
+    width: fit-content;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.text-small {
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.text-big {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.spacing {
+    margin: 2vh 0vh;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.section2 {
+    margin: 20px;
+}
+
+.second-section img {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.section2 p,
+img {
+    padding: 0.5vh 0vh;
+}
+
+.third-section {
+    background-color: rgb(223 226 210 / 70%);
+    margin-top: 8vh;
+    min-height: 50vh;
+    width: 88vw;
+    position: absolute;
+    margin-left: 5vw;
+}
+
+.title-AboutNature {
+    padding: 0vw 0vw 6vh 3vw;
+}
+
+.content-AboutNature {
+    padding: 36px 75px;
+    font-size: large;
+}
+
+.bg-image {
+    padding-top: 150px;
+}
+
+.bg-image img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    margin: 8vh 0vh;
+    font-family: 'Diplomata SC', cursive;
+
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form p {
+    padding: 1vh 0vh;
+}
+.form input{
+    width: 30vw;
+}
+
+textarea {
+    width: 30vw;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form textarea {
+    width: 30vw;
+    height: 80px;
+}
+
+.contact h1 {
+    margin: 0px 0px 10vh 0px;
+}
+
+.contact p {
+    margin: 0px 0px 2vh 0px;
+}
+
+.contact a img {
+    margin-left: 3.5vw;
+}
+.button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 642px) {
+    .text-big p {
+        margin-left: 8vw;
+    }
+
+    .second-section img {
+        width: 22vw;
+        height: 35vh;
+    }
+
+    .second-section {
+        margin-left: 14vw;
+    }
+}
+
+@media only screen and (max-width: 626px) {
+    .navbar {
+        flex-direction: column;
+        height: 54vh;
+        transition: all 1s ease-out;
+        background-image: none;
+        background-color: rgb(237 195 165);
+    }
+    .first-section{
+        min-height: 50vh;
+    }
+
+    .navbar ul {
+        width: fit-content;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 7vh 0vw;
+    }
+
+    .logo {
+        margin-right: 34px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .resp-visibility {
+        opacity: 0;
+    }
+
+    .resp-height {
+        height: 35px;
+    }
+
+    .second-section{
+        flex-direction: column;      
+        margin: 0px;  
+    }
+    .section2{
+        margin: 10px;
+    }
+    .second-section img {
+        width: 300px;
+        height: auto;   
+        border-radius: 20px;     
+    }
+    .third-section{
+        position: relative;
+        margin-top: 10px;
+        margin: auto;
+    }
+    .title-AboutNature {
+        padding: 15px;
+    }
+    .content-AboutNature {
+        padding: 0px 26px;       
+}
+    .bg-image{
+        display: none;
+    }
+    .contact-us{
+        flex-direction: column;
+        align-items: center;
+        margin: 22px 0px;
+        justify-content:baseline;
+  }
+  .contact h1,p{
+    margin: 5px;
+  }
+  .social-media{
+    margin-left: 50px;
+  }
+  .form input{
+    width: 70vw;
+  }
+  .form textarea{
+    width: 70vw;
+  }
+}

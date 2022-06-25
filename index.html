@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar background resp-height">
+        <div class="logo resp-visibility">
+            <img src="../img/avatar.png" alt="Avatar">
+        </div>
+        <ul class= "nav-list resp-visibility">
+            <li><a href="home"></a> Home </li>
+            <li><a href="Portfolio"></a> Portfolio </li>
+            <li><a href="Videos"></a> Videos </li>
+            <li><a href="Contact"></a> Contact Us </li>
+        </ul>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="first-section background">
+        <div class="text-small spacing">
+            <p>Travel Photographer</p>
+        </div>
+        <div class="text-big spacing">
+            <p>Seeing the World, Through the Eyes of My Lens</p>
+        </div>
+        <button class="btn spacing"> GET IN THE MOOD </button>
+    </section>
+
+    <section class="second-section center">
+        <div class="section2">
+            <img src="../img/river1.jpg" alt="river-image">
+            <p> Album 1</p>
+            <p>KASHMIR</p>
+
+        </div>
+        <div class="section2">
+            <img src="../img/river2.jpg" alt="river-image">
+            <p>Album 2</p>
+            <p>LADAKH</p>
+        </div>
+        <div class="section2">
+            <img src="../img/river3.jpg" alt="river-image">
+            <p>Album 3</p>
+            <p>OOTY</p>
+
+        </div>
+    </section>
+
+    <section class="third-section"> 
+        <h1 class="title-AboutNature">WHY SHOULD YOU LOVE NATURE?</h1>
+        <div class="content-AboutNature">
+        <p>Nature has been proven, time and time again, to reduce depression, anxiety,
+            stress, and anger, as well as generally boost psychological wellbeing. Nature can help to make you feel
+            happier and more content as a person, which can improve many areas of your life. It underpins our economy,
+            our society, indeed our very existence. Our forests, rivers, oceans and soils provide us with the food we
+            eat, the air we breathe, the water we irrigate our crops with. We also rely on them for numerous other goods
+            and services we depend on for our health, happiness and prosperity.</p>
+        </div>
+    </section>
+    <div class="bg-image">
+        <img src="../img/tree3.jpg" alt="nature-photo">
+    </div>
+
+    <section class="contact-us">
+        <div class="contact">
+            <h1>CONTACT</h1>
+            <p>Sharma Yash</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/sharmayash.10/?hl=en"> <img src="../img/instalogo.png" width="20vh" alt="instagram-logo"></a>    
+                <a href="www.facebook.com"> <img src="../img/fblogo.png"  width="20vh"alt="fb-logo"></a>
+            </div>
+        </div>
+        <form class="form" name = "contact-form" onsubmit="return validateForm()">
+            <p>First Name*</p>
+            <input type="text" name="first-name">
+            <p>Last Name*</p>
+            <input type="text" name="last-name">
+            <p>Email*</p>
+            <input type="email" name="Email" id="">
+            <p>Message</p>
+            <textarea name="message" id="" cols="51" rows="10"></textarea>
+            <br>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; Sharma Yash 2022</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
